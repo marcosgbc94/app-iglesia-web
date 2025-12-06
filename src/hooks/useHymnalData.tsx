@@ -27,7 +27,7 @@ export const useHymnalData = (): UseHymnalResult => {
 
             } catch (err) {
                 if (err instanceof Error) {
-                    setError(`Error: ${err.message}. Asegúrate de que /hymnal.json sea accesible y tenga formato JSON válido.`);
+                    setError(`Error: ${err.message}. Error de datos`);
                 } else {
                     setError('Ocurrió un error desconocido durante la carga de datos.');
                 }
