@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+.prose i {
+    color: blue;
+    font-style: italic;
+    padding: 0 2px;
+}
+
+.prose h4 {
+    text-transform: uppercase;
+    color: blue;
+    margin-bottom: 1px;
+    font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+    html .prose h4 {
+        text-transform: uppercase;
+        color: yellow;
+        margin-bottom: 1px;
+        font-weight: 600;
+    }
+
+    html .prose i {
+        color: yellow;
+        font-style: italic;
+    }
+}
